@@ -72,10 +72,10 @@ namespace UCTest
 
             foreach (var item in result)
             {
-                Console.WriteLine($"{item.key.country} {item.key.State} {item.key.City}");
+                //Console.WriteLine($"{item.key.country} {item.key.State} {item.key.City}");
                 foreach (var setting in item.Settings)
                 {
-                    Console.WriteLine($"{setting.FirstName} {setting.LastName} {setting.Department}");
+                    Console.WriteLine("{setting.FirstName} {setting.LastName} {setting.Department}");
                 }
             }
 
@@ -83,7 +83,7 @@ namespace UCTest
 
             foreach (var item in result2)
             {
-                Console.WriteLine($"{item.country} {item.State} {item.City} {item.FirstName} {item.LastName}");
+                Console.WriteLine("{item.country} {item.State} {item.City} {item.FirstName} {item.LastName}");
             }
             /*
             foreach (var item in result2)

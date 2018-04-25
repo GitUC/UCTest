@@ -88,7 +88,7 @@ namespace UCTest
         static async Task WaitAsynchronouslyAsync(string message)
         {
             await Task.Delay(5000);
-            Console.WriteLine( $"Finished haha {message}");
+            Console.WriteLine( string.Format("Finished haha {0}", message));
         }
 
         // The following method runs synchronously, despite the use of async.
@@ -98,7 +98,7 @@ namespace UCTest
         {
             // Add a using directive for System.Threading.
             Thread.Sleep(10000);
-            Console.WriteLine($"lala  {message}");
+            Console.WriteLine(string.Format("lala {0}.",  message));
         }
     }
 }
