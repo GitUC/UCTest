@@ -8,8 +8,41 @@ namespace UCTest
 {
     class Program
     {
+        public static void test()
+        {
+            String[] values = { null, String.Empty, "true", "TrueString",
+                          "False", "    false    ", "-1", "0", "2" };
+            foreach (var value in values)
+            {
+                try
+                {
+                    Console.WriteLine("Converted '{0}' to {1}.", value,
+                                      Convert.ToBoolean(value));
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Unable to convert '{0}' to a Boolean.", value);
+                }
+            }
+
+            int[] testValues = { 2, 1, 0, -1, -2 };
+            foreach (var value in testValues)
+            {
+                try
+                {
+                    Console.WriteLine("Converted '{0}' to {1}.", value,
+                                      Convert.ToBoolean(value));
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Unable to convert '{0}' to a Boolean.", value);
+                }
+            }
+        }
+
         static void Main(string[] args)
         {
+            test();
             Console.WriteLine("Hello World!");
             /*
             Dictionary<string, string> data = new Dictionary<string, string>();
@@ -31,9 +64,9 @@ namespace UCTest
             Test1(typeof(Person));
             */
 
-            Test2();
+            //Test2();
 
-            TaskTest.TestAsync().Wait();
+            //TaskTest.TestAsync().Wait();
 
             Console.WriteLine("Test completed! Press any key to complete the test.");
             Console.ReadKey();
