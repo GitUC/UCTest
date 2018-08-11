@@ -61,6 +61,9 @@ namespace UCTest
 
         public async static Task<bool> TestAsync()
         {
+			Console.WriteLine("Add SSH Key"); 
+			 
+			 
             Console.WriteLine("TaskTest");
 			Console.WriteLine("Task Test again");
             // Call the method that runs asynchronously.
