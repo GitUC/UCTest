@@ -43,7 +43,7 @@ namespace UCTest
         static void Main(string[] args)
         {
             test();
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello World! Hello World!!");
             /*
             Dictionary<string, string> data = new Dictionary<string, string>();
             data.Add("LastName", "Chen");
