@@ -10,6 +10,7 @@ namespace UCTest
     {
         public static void Test2()
         {
+			Console.WriteLine ("Hello world");
             var tasks = new List<Task<int>>();
 
             // Define a delegate that prints and returns the system tick count
